@@ -1,6 +1,10 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model()
+@model({
+  settings: {
+    postgresql: {schema:'public',table: 'profile'},
+  },
+})
 export class Profile extends Entity {
   @property({
     type: 'number',
@@ -13,7 +17,7 @@ export class Profile extends Entity {
       dataPrecision: null,
       dataScale: 0,
       nullable: 'NO',
-    },
+    }
   })
   id?: number;
 
@@ -73,17 +77,30 @@ export class Profile extends Entity {
   email?: string;
 
   @property({
-    type: 'number',
+    type: 'string',
     postgresql: {
       columnName: 'phone',
-      dataType: 'integer',
+      dataType: 'text',
       dataLength: null,
       dataPrecision: null,
       dataScale: null,
       nullable: 'YES',
     }
   })
-  phone?: number;
+  phone?: string;
+
+  @property({
+    type: 'string',
+    postgresql: {
+      columnName: 'userImage',
+      dataType: 'text',
+      dataLength: null,
+      dataPrecision: null,
+      dataScale: null,
+      nullable: 'YES',
+    }
+  })
+  userImage?: string;
 
   @property({
     type: 'string',
@@ -141,18 +158,18 @@ export class Profile extends Entity {
   locationState: string;
 
   @property({
-    type: 'number',
+    type: 'string',
     required: true,
     postgresql: {
       columnName: 'zip',
-      dataType: 'integer',
+      dataType: 'text',
       dataLength: null,
       dataPrecision: null,
       dataScale: null,
       nullable: 'NO',
     }
   })
-  locationZip: number;
+  locationZip: string;
 
 
   constructor(data?: Partial<Profile>) {
