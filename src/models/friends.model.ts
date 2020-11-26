@@ -10,22 +10,28 @@ export class Friends extends Entity {
   FriendsId?: number;
 
   @property({
-    type: 'string',
+    type: 'number',
     required: true,
   })
-  UserOne: string;
+  UserOneID: number;
 
   @property({
-    type: 'string',
+    type: 'number',
     required: true,
   })
-  UserTwo: string;
+  UserTwoID: number;
 
   @property({
     type: 'number',
     required: true,
   })
   Status: number;
+
+  @property({
+    type: 'number',
+    required: true,
+  })
+  ActionUserID: number;
 
 
   constructor(data?: Partial<Friends>) {
