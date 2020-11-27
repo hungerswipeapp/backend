@@ -2526,7 +2526,11 @@ log-symbols@4.0.0:
   dependencies:
     chalk "^4.0.0"
 
+<<<<<<< HEAD
 loopback-connector-postgresql@^5.2.1:
+=======
+loopback-connector-postgresql@^5.0.1:
+>>>>>>> 572c3084ebb662e5c793c04463396e76aa5de1be
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/loopback-connector-postgresql/-/loopback-connector-postgresql-5.2.1.tgz#e2e7867dbbaf6e1e591e6e1aa0fd08a4baa6d39a"
   integrity sha512-lMlEw5jE2BN6HaeqzSqRho/p1vZis/VGAS7ma8I76UycI4QAb58mn862URR7z/W5CXMBRJl2NlXk1UmS/UwIOw==
