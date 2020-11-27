@@ -1,1 +1,3 @@
-export * from './friends.repository';
+export * from './profile.repository';
+export * from './restaurants.repository';
+export * from './menu.repository';

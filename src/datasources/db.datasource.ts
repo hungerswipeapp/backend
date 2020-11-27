@@ -7,7 +7,7 @@ const config = {
   url: '',
   host: 'localhost',
   port: 5432,
-  user: 'Elias',
+  user: 'zain',
   password: 'password',
   database: 'hungerswipe'
 };

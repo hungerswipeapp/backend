@@ -16,8 +16,8 @@ import {
   del,
   requestBody,
 } from '@loopback/rest';
-import {Friends} from '../models';
-import {FriendsRepository} from '../repositories';
+import {Friends} from '../models/friends.model';
+import {FriendsRepository} from '../repositories/friends.repository';
 
 export class FriendsController {
   constructor(
