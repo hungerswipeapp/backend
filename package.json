@@ -49,12 +49,20 @@
   ],
   "dependencies": {
     "@loopback/boot": "^3.1.0",
+    "@loopback/context": "^3.13.1",
     "@loopback/core": "^2.12.0",
+    "@loopback/http-server": "^2.3.2",
     "@loopback/repository": "^3.2.0",
     "@loopback/rest": "^9.0.0",
     "@loopback/rest-explorer": "^3.0.3",
     "@loopback/service-proxy": "^3.0.3",
+    "@types/morgan": "^1.9.2",
+    "@types/socket.io": "^2.1.11",
+    "@types/socket.io-client": "^1.4.34",
     "loopback-connector-postgresql": "^5.2.1",
+    "loopback-connector-rest": "^3.7.0",
+    "morgan": "^1.10.0",
+    "socket.io": "^3.0.3",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, hasMany} from '@loopback/repository';
+import {Friends} from './friends.model';
 
 @model({
   settings: {
@@ -104,14 +105,13 @@ export class Profile extends Entity {
 
   @property({
     type: 'string',
-    required: true,
     postgresql: {
       columnName: 'street',
       dataType: 'text',
       dataLength: null,
       dataPrecision: null,
       dataScale: null,
-      nullable: 'NO',
+      nullable: 'YES',
     }
   })
   locationSt: string;
@@ -131,46 +131,46 @@ export class Profile extends Entity {
 
   @property({
     type: 'string',
-    required: true,
     postgresql: {
       columnName: 'city',
       dataType: 'text',
       dataLength: null,
       dataPrecision: null,
       dataScale: null,
-      nullable: 'NO',
+      nullable: 'YES',
     }
   })
   locationCity: string;
 
   @property({
     type: 'string',
-    required: true,
     postgresql: {
       columnName: 'state',
       dataType: 'text',
       dataLength: null,
       dataPrecision: null,
       dataScale: null,
-      nullable: 'NO',
+      nullable: 'YES',
     }
   })
   locationState: string;
 
   @property({
     type: 'string',
-    required: true,
     postgresql: {
       columnName: 'zip',
       dataType: 'text',
       dataLength: null,
       dataPrecision: null,
       dataScale: null,
-      nullable: 'NO',
+      nullable: 'YES',
     }
   })
   locationZip: string;
 
+
+  @hasMany(() => Friends)
+  friends: Friends[];
 
   constructor(data?: Partial<Profile>) {
     super(data);

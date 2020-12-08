@@ -4,21 +4,23 @@ export * from './application';
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new BackendApiApplication(options);
+  
   await app.boot();
   await app.start();
 
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);
   console.log(`Try ${url}/ping`);
-
+  
   return app;
 }
 
 if (require.main === module) {
   // Run the application
+  const port = process.env.PORT ?? 3000;
   const config = {
     rest: {
-      port: +(process.env.PORT ?? 3000),
+      port,
       host: process.env.HOST,
       // The `gracePeriodForClose` provides a graceful close for http/https
       // servers with keep-alive clients. The default value is `Infinity`
@@ -31,9 +33,16 @@ if (require.main === module) {
         setServersFromRequest: true,
       },
     },
+    websocket: {
+      port
+    }
   };
   main(config).catch(err => {
     console.error('Cannot start the application.', err);
     process.exit(1);
   });
 }
+
+export * from '@loopback/rest';
+export * from './models';
+export * from './repositories';
