@@ -4,8 +4,7 @@ import {ws} from '../websockets/decorators/websocket.decorator';
 /**
  * A demo controller for websocket
  */
-//name: 'chatNsp'
-@ws({namespace: /^\/chats\/\d+$/  })
+@ws({name: 'chatNsp', namespace: /^\/chats\/\d+$/  })
 export class ChatControllerWs {
   constructor(
     @ws.socket() // Equivalent to `@inject('ws.socket')`

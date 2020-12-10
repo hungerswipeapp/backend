@@ -59,10 +59,11 @@
     "@types/morgan": "^1.9.2",
     "@types/socket.io": "^2.1.11",
     "@types/socket.io-client": "^1.4.34",
+    "express": "^4.17.1",
     "loopback-connector-postgresql": "^5.2.1",
     "loopback-connector-rest": "^3.7.0",
     "morgan": "^1.10.0",
-    "socket.io": "^3.0.3",
+    "socket.io": "^2.3.0",
     "tslib": "^2.0.0"
   },
   "devDependencies": {

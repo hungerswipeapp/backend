@@ -34,7 +34,7 @@ if (require.main === module) {
       },
     },
     websocket: {
-      port
+      port:5000
     }
   };
   main(config).catch(err => {

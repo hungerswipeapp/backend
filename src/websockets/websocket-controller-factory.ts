@@ -1,6 +1,7 @@
 import { BindingScope, Constructor, Context, invokeMethod, MetadataInspector, } from '@loopback/context';
 import { Socket } from 'socket.io';
 
+
 /* eslint-disable @typescript-eslint/no-misused-promises */
 export class WebSocketControllerFactory {
   private controller: { [method: string]: Function };
