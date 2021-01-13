@@ -20,9 +20,9 @@ ls -lha
 
 cat Dockerfile 
 
-docker build . -t hs-backendapi
+docker build . -t hs-backendapi:$BUILD_NUMBER
 
-docker run -itd -p 3000:3000 hs-backendapi
+docker run -itd -p 3000:3000 hs-backendapi:$BUILD_NUMBER
 
 '''
         echo 'First CICD'
