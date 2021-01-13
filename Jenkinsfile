@@ -20,9 +20,9 @@ ls -lha
 
 cat Dockerfile 
 
-docker build . -t hs-backendAPI
+docker build . -t hs-backendapi
 
-docker run -itd -p 3000:3000 hs-backendAPI
+docker run -itd -p 3000:3000 hs-backendapi
 
 '''
         echo 'First CICD'
