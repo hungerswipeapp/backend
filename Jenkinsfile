@@ -6,15 +6,31 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('Build') {
       steps {
-        sh 'echo "CICD Hello World"'
+        sh '''echo "CICD Hello World"
+
+apt update 
+apt install curl -y
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+
+ls -lha 
+
+cat Dockerfile 
+
+docker build . -t hs-backendapi
+
+docker run -itd -p 3000:3000 hs-backendapi
+
+'''
         echo 'First CICD'
       }
     }
 
   }
   environment {
-    DOCKER_HOST = '10.88.88.78:4243'
+    DOCKER_HOST = '34.71.41.214:4242'
   }
 }
