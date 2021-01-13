@@ -25,5 +25,5 @@ COPY --chown=node . .
 ENV HOST=0.0.0.0 PORT=3000
 
 EXPOSE ${PORT}
-#CMD [ "node", "." ]
-CMD [ "node","server/server.js" ]
+CMD [ "node", "." ]
+#CMD [ "node","server/server.js" ]
