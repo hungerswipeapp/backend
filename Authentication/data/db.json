@@ -1,0 +1,29 @@
+{
+  "ids": {
+    "Todo": 5,
+    "User": 9,
+    "UserCredentials": 6
+  },
+  "models": {
+    "Todo": {
+      "1": "{\"title\":\"Take over the galaxy\",\"desc\":\"MWAHAHAHAHAHAHAHAHAHAHAHAHAMWAHAHAHAHAHAHAHAHAHAHAHAHA\",\"id\":1}",
+      "2": "{\"title\":\"destroy alderaan\",\"desc\":\"Make sure there are no survivors left!\",\"id\":2}",
+      "3": "{\"title\":\"play space invaders\",\"desc\":\"Become the very best!\",\"id\":3}",
+      "4": "{\"title\":\"crush rebel scum\",\"desc\":\"Every.Last.One.\",\"id\":4}"
+    },
+    "User": {
+      "4": "{\"username\":\"testuser1\",\"email\":\"testuser1@abc.com\",\"id\":4}",
+      "7f6b810b-f248-4f29-9818-bf9f75acb0e6": "{\"id\":\"7f6b810b-f248-4f29-9818-bf9f75acb0e6\",\"email\":\"testuser2@abc.com\"}",
+      "e6561b5a-b8b0-4eec-ba75-5f16d704b669": "{\"id\":\"e6561b5a-b8b0-4eec-ba75-5f16d704b669\",\"email\":\"sonjake114@gmail.com\"}",
+      "9ac91f50-f763-4a6c-a0e7-ea53b4306114": "{\"id\":\"9ac91f50-f763-4a6c-a0e7-ea53b4306114\",\"username\":\"sonjake114\",\"email\":\"jakertons114@gmsdsd.com\",\"phonenumber\":\"1245685930\"}",
+      "590ee104-6e07-4e26-9c9e-0593fcbc65ee": "{\"id\":\"590ee104-6e07-4e26-9c9e-0593fcbc65ee\",\"email\":\"sonjake114@gmail.com\",\"firstname\":\"Jake\",\"lastname\":\"Kim\",\"phonenumber\":\"5108595219\"}"
+    },
+    "UserCredentials": {
+      "1": "{\"password\":\"$2a$10$QrcA7GDOZ06TTXEBhuz87On8mcapb9qoU3rjWb7Z5pwBv7ZAbmXwa\",\"userId\":4,\"id\":1}",
+      "e160a0e4-3e8a-4d9e-8946-bc43b5805fcf": "{\"id\":\"e160a0e4-3e8a-4d9e-8946-bc43b5805fcf\",\"password\":\"$2a$10$c2y6.nf9qvZfUN66UwP3beFbN0FtfWVOeVEIq/6096lrSoge1rggK\",\"userId\":\"7f6b810b-f248-4f29-9818-bf9f75acb0e6\"}",
+      "151ef2ff-e067-4764-b20f-112e062faf15": "{\"id\":\"151ef2ff-e067-4764-b20f-112e062faf15\",\"password\":\"$2a$10$09eLI7FFNl0szztPQGW38erEa56ktzmh060tJ.D5W6leRv1XGtxcG\",\"userId\":\"e6561b5a-b8b0-4eec-ba75-5f16d704b669\"}",
+      "620e8164-77ea-4e9d-8f48-470396628432": "{\"id\":\"620e8164-77ea-4e9d-8f48-470396628432\",\"password\":\"$2a$10$79QAvpEdbE9YykK87GSjcOCtVMcZoW4CdTx5WLLvmFbN8KscrRURm\",\"userId\":\"9ac91f50-f763-4a6c-a0e7-ea53b4306114\"}",
+      "d06087f1-35a7-4d15-889a-76b872a9be44": "{\"id\":\"d06087f1-35a7-4d15-889a-76b872a9be44\",\"password\":\"$2a$10$WiR/Ur0ubwspgkhpRBlyBOUKpAy/WkunNMTPMA82df5SEy1GhalVS\",\"userId\":\"590ee104-6e07-4e26-9c9e-0593fcbc65ee\"}"
+    }
+  }
+}
